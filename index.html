@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sofia — Wholesale E-commerce | KL • Singapore" />
+  <title>Sofia | Wholesale E-commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">Sofia</a>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="mini-contact" href="https://wa.me/6583783641" target="_blank" rel="noopener">WhatsApp</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>Sofia</h1>
+        <p class="headline">Wholesale E-commerce <span>•</span> KL <span>•</span> Singapore</p>
+        <p class="intro">
+          你好，我是 Sofia。目前我在一个全球 Dropshipping 平台上经营一家批发网店，
+          专注于连接优质产品、市场与全球客户。
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#about">了解更多</a>
+          <a class="btn secondary" href="https://wa.me/6583783641" target="_blank" rel="noopener">联系我</a>
+        </div>
+      </div>
+
+      <div class="portrait-wrap reveal">
+        <div class="portrait-glow"></div>
+        <img src="profile.jpg" alt="Sofia 的个人照片" class="portrait" />
+      </div>
+
+      <div class="shape shape-one"></div>
+      <div class="shape shape-two"></div>
+    </section>
+
+    <section class="content-section" id="about">
+      <div class="section-heading reveal">
+        <p class="section-kicker">01 · About Me</p>
+        <h2>连接产品、市场与全球客户</h2>
+      </div>
+      <div class="about-grid">
+        <article class="card wide reveal">
+          <h3>关于我</h3>
+          <p>
+            我热爱电商与全球市场，擅长供应链协调、客户关系维护及批发业务运营。
+            我希望通过专业、可靠和高效的服务，为全球客户提供更优质的产品选择。
+          </p>
+        </article>
+        <article class="card stat reveal">
+          <span class="card-label">Base</span>
+          <strong>KL / SG</strong>
+          <p>吉隆坡与新加坡</p>
+        </article>
+        <article class="card stat reveal">
+          <span class="card-label">Focus</span>
+          <strong>Global Trade</strong>
+          <p>Wholesale & Dropshipping</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section split-section">
+      <article class="info-panel reveal" id="education">
+        <p class="section-kicker">02 · Education</p>
+        <h2>教育经历</h2>
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div>
+            <h3>马来西亚博特拉大学</h3>
+            <p class="muted">Universiti Putra Malaysia</p>
+            <p>在大学学习期间积累了商业、管理与跨文化沟通方面的基础。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="info-panel reveal" id="experience">
+        <p class="section-kicker">03 · Experience</p>
+        <h2>工作经历</h2>
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div>
+            <h3>服装设计公司 · 财务管理</h3>
+            <p class="muted">Finance Management</p>
+            <p>负责财务报表、预算管理、成本控制与日常财务协调工作。</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div>
+            <h3>全球批发网店经营</h3>
+            <p class="muted">Wholesale E-commerce</p>
+            <p>通过全球 Dropshipping 平台开展批发业务，服务国际客户。</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="contact-section reveal" id="contact">
+      <div>
+        <p class="section-kicker">04 · Contact</p>
+        <h2>期待与你建立联系</h2>
+        <p>欢迎交流批发合作、产品资源与跨境电商经验。</p>
+      </div>
+      <div class="contact-links">
+        <a href="tel:+6583783641">
+          <span>Phone</span>
+          <strong>+65 8378 3641</strong>
+        </a>
+        <a href="https://wa.me/6583783641" target="_blank" rel="noopener">
+          <span>WhatsApp</span>
+          <strong>Start a conversation</strong>
+        </a>
+        <div>
+          <span>Location</span>
+          <strong>KL / Singapore</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Sofia. Built with GitHub Pages.</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
